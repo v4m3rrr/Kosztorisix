@@ -61,14 +61,6 @@ public class MenuFrame extends JFrame {
 		});
 		contentPane.add(createEstimate);
 		
-		MenuButton createBoq = new MenuButton("Stwórz Przedmiar");
-		createBoq.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-			}
-		});
-		contentPane.add(createBoq);
-		
 		MenuButton loadEstimate = new MenuButton("Wczytaj");
 		loadEstimate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -95,7 +87,7 @@ public class MenuFrame extends JFrame {
 		});
 		contentPane.add(loadEstimate);
 		
-		CenterButtons(new JButton[] {createEstimate,createBoq,loadEstimate},10);
+		CenterButtons(new JButton[] {createEstimate,loadEstimate},10);
 	}
 	
 	private void CenterButtons(JButton[] buttons, int margin) {
